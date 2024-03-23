@@ -1,0 +1,275 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 65536 bytes for Failed to commit metaspace.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#
+] 
+
+  0x00000251f4724b5c: ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00000251f4724b5c: 605d e99d | cac5 fff4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 
+  0x00000251f4724b7c: f4f4 f4f4 
+[Stub Code]
+  0x00000251f4724b80: ;   {no_reloc}
+  0x00000251f4724b80: 0f1f 4400 
+
+  0x00000251f4724b84: ;   {static_stub}
+  0x00000251f4724b84: 0048 bb00 | 0000 0000 
+
+  0x00000251f4724b8c: ;   {runtime_call}
+  0x00000251f4724b8c: 0000 00e9 | fbff ffff 
+[Exception Handler]
+  0x00000251f4724b94: ;   {runtime_call handle_exception_from_callee Runtime1 stub}
+  0x00000251f4724b94: e867 f7c5 
+
+  0x00000251f4724b98: ;   {external_word}
+  0x00000251f4724b98: ff48 b940 | 9a94 34fc | 7f00 0048 
+
+  0x00000251f4724ba4: ;   {runtime_call}
+  0x00000251f4724ba4: 83e4 f049 | ba60 2f5d | 34fc 7f00 | 0041 ffd2 
+
+  0x00000251f4724bb4: ;   {section_word}
+  0x00000251f4724bb4: f449 bab5 | 4b72 f451 | 0200 0041 
+
+  0x00000251f4724bc0: ;   {runtime_call DeoptimizationBlob}
+  0x00000251f4724bc0: 52e9 da20 | bcff f4f4 
+[/MachCode]
+
+
+Compiled method (c1)    2543 1259       1       java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass (97 bytes)
+ total in heap  [0x00000251f4725c10,0x00000251f4726578] = 2408
+ relocation     [0x00000251f4725d68,0x00000251f4725df0] = 136
+ main code      [0x00000251f4725e00,0x00000251f47261e0] = 992
+ stub code      [0x00000251f47261e0,0x00000251f4726258] = 120
+ metadata       [0x00000251f4726258,0x00000251f47262c8] = 112
+ scopes data    [0x00000251f47262c8,0x00000251f47263f0] = 296
+ scopes pcs     [0x00000251f47263f0,0x00000251f4726510] = 288
+ dependencies   [0x00000251f4726510,0x00000251f4726528] = 24
+ nul chk table  [0x00000251f4726528,0x00000251f4726578] = 80
+
+[Constant Pool (empty)]
+
+[MachCode]
+[Entry Point]
+  # {method} {0x00000251805f7a48} 'defineClass' '(ZLjava/lang/Object;)Ljava/lang/Class;' in 'java/lang/invoke/MethodHandles$Lookup$ClassDefiner'
+  # this:     rdx:rdx   = 'java/lang/invoke/MethodHandles$Lookup$ClassDefiner'
+  # parm0:    r8        = boolean
+  # parm1:    r9:r9     = 'java/lang/Object'
+  #           [sp+0x100]  (sp of caller)
+  0x00000251f4725e00: 448b 5208 | 49c1 e203 
+
+  0x00000251f4725e08: ;   {runtime_call ic_miss_stub}
+  0x00000251f4725e08: 4c3b d00f | 856f b2bb | ff66 6666 | 0f1f 8400 | 0000 0000 | 6666 6690 
+[Verified Entry Point]
+  0x00000251f4725e20: 8984 2400 | 90ff ff55 | 4881 ecf0 | 0000 0048 | 8994 24b8 | 0000 0044 | 8984 24c8 | 0000 004c 
+  0x00000251f4725e40: 898c 24d0 | 0000 008b | 7210 8b76 | 1048 89b4 | 24c0 0000 | 008b 7e34 | 4889 bc24 | b000 0000 
+  0x00000251f4725e60: 4883 ff00 | 0f85 0f00 
+
+  0x00000251f4725e68: ;   {oop(NULL)}
+  0x00000251f4725e68: 0000 48bf | 0000 0000 | 0000 0000 | e913 0100 
+
+  0x00000251f4725e78: ;   {oop(a 'java/lang/Class'{0x00000000c0afe808} = 'java/lang/System')}
+  0x00000251f4725e78: 0048 bb08 | e8af c000 | 0000 008b | 5b7c 4883 | fb00 0f84 | fc00 0000 | 0f1f 8000 
+
+  0x00000251f4725e94: ;   {static_call}
+  0x00000251f4725e94: 0000 00e8 
+
+  0x00000251f4725e98: ; ImmutableOopMap {[192]=Oop [184]=Oop [176]=Oop [208]=Oop }
+                      ;*invokestatic getCallerClass {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.Class::getClassLoader@20 (line 901)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+  0x00000251f4725e98: e4ba bbff 
+
+  0x00000251f4725e9c: ;   {oop(a 'java/lang/Class'{0x00000000c0afe808} = 'java/lang/System')}
+  0x00000251f4725e9c: 49b8 08e8 | afc0 0000 | 0000 418b | 507c 4883 | fa00 0f84 | d000 0000 | 4883 f800 | 0f85 0f00 
+  0x00000251f4725ebc: ;   {oop(NULL)}
+  0x00000251f4725ebc: 0000 49b8 | 0000 0000 | 0000 0000 | e904 0000 | 0044 8b40 | 3448 8bbc | 24b0 0000 | 004c 3bc7 
+  0x00000251f4725edc: 0f85 0b00 | 0000 41b8 | 0000 0000 | e96f 0000 | 0049 83f8 | 000f 850b | 0000 0041 | b800 0000 
+  0x00000251f4725efc: 00e9 5a00 | 0000 483b | 0748 8bf7 | e917 0000 | 0066 6690 | 4d8b 9758 
+
+  0x00000251f4725f14: ; ImmutableOopMap {[192]=Oop [184]=Oop [208]=Oop rdx=Oop rdi=Oop [176]=Oop r8=Oop rsi=Oop }
+                      ;*ifnonnull {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) java.lang.ClassLoader::isAncestor@15 (line 2017)
+                      ; - java.lang.ClassLoader::needsClassLoaderPermissionCheck@15 (line 2035)
+                      ; - java.lang.ClassLoader::checkClassLoaderPermission@15 (line 2059)
+                      ; - java.lang.Class::getClassLoader@23 (line 901)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+                      ;   {poll}
+  0x00000251f4725f14: 0300 0041 | 8502 4883 | fe00 0f84 | 0d00 0000 
+
+  0x00000251f4725f24: ; implicit exception: dispatches to 0x00000251f472612e
+  0x00000251f4725f24: 8b76 184c | 3bc6 75e4 | e90b 0000 | 0041 b800 | 0000 00e9 | 0600 0000 | 41b8 0100 | 0000 4183 
+  0x00000251f4725f44: f800 41b8 | 0000 0000 | 0f85 0600 | 0000 41b8 | 0100 0000 | 4183 e001 | 4183 f800 | 0f84 1e00 
+  0x00000251f4725f64: ;   {oop(a 'java/lang/RuntimePermission'{0x00000000c068d988})}
+  0x00000251f4725f64: 0000 49b8 | 88d9 68c0 | 0000 0000 | 0f1f 4400 | 0048 b8ff | ffff ffff 
+
+  0x00000251f4725f7c: ;   {virtual_call}
+  0x00000251f4725f7c: ffff ffe8 
+
+  0x00000251f4725f80: ; ImmutableOopMap {[192]=Oop [184]=Oop [208]=Oop [176]=Oop }
+                      ;*invokevirtual checkPermission {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.ClassLoader::checkClassLoaderPermission@25 (line 2060)
+                      ; - java.lang.Class::getClassLoader@23 (line 901)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+  0x00000251f4725f80: fcb6 bbff | 488b bc24 | b000 0000 | 4883 ff00 | 0f84 be00 | 0000 488b | 9424 b800 | 0000 8b72 
+  0x00000251f4725fa0: 108b 5e18 | 4883 fb00 | 4889 bc24 | e000 0000 | 0f85 b000 
+
+  0x00000251f4725fb4: ;   {oop(a 'java/lang/Class'{0x00000000c0a592f8} = 'jdk/internal/access/SharedSecrets')}
+  0x00000251f4725fb4: 0000 48bb | f892 a5c0 | 0000 0000 | 8b9b 8000 | 0000 8b46 | 1048 83fb | 000f 8421 
+
+  0x00000251f4725fd0: ;   {metadata('java/lang/System$2')}
+  0x00000251f4725fd0: 0000 0049 | bb30 4b06 | 0001 0000 | 0044 8b4b | 0849 c1e1 | 034d 3b59 | 380f 8549 | 0100 00e9 
+  0x00000251f4725ff0: 0000 0000 | 488b cb48 | 3b03 483b | 0048 8bd0 | 4889 b424 | d800 0000 | 0f1f 8000 
+
+  0x00000251f472600c: ;   {optimized virtual_call}
+  0x00000251f472600c: 0000 00e8 
+
+  0x00000251f4726010: ; ImmutableOopMap {[192]=Oop [208]=Oop [216]=Oop [224]=Oop [184]=Oop }
+                      ;*invokevirtual protectionDomain {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.System$2::protectionDomain@1 (line 2422)
+                      ; - java.lang.invoke.MethodHandles$Lookup::lookupClassProtectionDomain@17 (line 2457)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@23 (line 2437)
+  0x00000251f4726010: f101 0000 | 450f be47 | 3841 83f8 | 0048 8bb4 | 24d8 0000 | 000f 851c | 0100 004c | 8bd0 4489 
+  0x00000251f4726030: 5618 f083 | 4424 c000 | 4c8b c64c | 33c0 49c1 | e814 4983 | f800 0f85 | 1701 0000 | 488b d8e9 
+  0x00000251f4726050: 1200 0000 | 4889 bc24 | e000 0000 
+
+  0x00000251f472605c: ;   {oop(NULL)}
+  0x00000251f472605c: 48bb 0000 | 0000 0000 | 0000 488b | bc24 e000 | 0000 488b | b424 c000 | 0000 488b | 9424 b800 
+  0x00000251f472607c: ;   {oop(a 'java/lang/Class'{0x00000000c0a592f8} = 'jdk/internal/access/SharedSecrets')}
+  0x00000251f472607c: 0000 49b8 | f892 a5c0 | 0000 0000 | 458b a880 | 0000 008b | 4a14 448b | 7218 448b | 4a0c 4983 
+  0x00000251f472609c: fd00 0f84 | 2100 0000 
+
+  0x00000251f47260a4: ;   {metadata('java/lang/System$2')}
+  0x00000251f47260a4: 48b8 304b | 0600 0100 | 0000 458b | 5d08 49c1 | e303 493b | 4338 0f85 | bb00 0000 | e900 0000 
+  0x00000251f47260c4: 004d 8bc5 
+
+  0x00000251f47260c8: ; implicit exception: dispatches to 0x00000251f4726180
+  0x00000251f47260c8: 493b 4500 | 4c8b c749 | 8bd1 4c8b | ce48 8bf9 | 498b f648 | 8bcb 8b9c | 24c8 0000 | 0089 1c24 
+  0x00000251f47260e8: 8954 2408 | 488b 9424 | d000 0000 | 4889 5424 | 1049 8bd5 
+
+  0x00000251f47260fc: ;   {optimized virtual_call}
+  0x00000251f47260fc: 6666 90e8 
+
+  0x00000251f4726100: ; ImmutableOopMap {[192]=Oop [184]=Oop }
+                      ;*invokeinterface defineClass {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@54 (line 2439)
+  0x00000251f4726100: bce9 ffff | 4881 c4f0 | 0000 005d 
+
+  0x00000251f472610c: ;   {poll_return}
+  0x00000251f472610c: 493b a750 | 0300 000f | 876c 0000 
+
+  0x00000251f4726118: ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f4726118: 00c3 e801 
+
+  0x00000251f472611c: ; ImmutableOopMap {rdx=Oop [184]=Oop r9=Oop [208]=Oop }
+                      ;*invokevirtual lookupClass {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@4 (line 2435)
+                      ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f472611c: c4c5 ffe8 
+
+  0x00000251f4726120: ; ImmutableOopMap {rdx=Oop [184]=Oop r9=Oop [208]=Oop rsi=Oop [192]=Oop }
+                      ;*invokevirtual getClassLoader {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+  0x00000251f4726120: fcc3 c5ff 
+
+  0x00000251f4726124: ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f4726124: e8f7 c3c5 
+
+  0x00000251f4726128: ; ImmutableOopMap {[192]=Oop [184]=Oop [176]=Oop [208]=Oop rdx=Oop }
+                      ;*invokevirtual getClassLoader0 {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.ClassLoader::getClassLoader@7 (line 2045)
+                      ; - java.lang.ClassLoader::checkClassLoaderPermission@9 (line 2058)
+                      ; - java.lang.Class::getClassLoader@23 (line 901)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+                      ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f4726128: ffe8 f2c3 
+
+  0x00000251f472612c: ; ImmutableOopMap {[192]=Oop [184]=Oop [208]=Oop rdx=Oop rdi=Oop [176]=Oop r8=Oop }
+                      ;*invokevirtual isAncestor {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.ClassLoader::needsClassLoaderPermissionCheck@15 (line 2035)
+                      ; - java.lang.ClassLoader::checkClassLoaderPermission@15 (line 2059)
+                      ; - java.lang.Class::getClassLoader@23 (line 901)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+                      ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f472612c: c5ff e8ed 
+
+  0x00000251f4726130: ; ImmutableOopMap {[192]=Oop [184]=Oop [208]=Oop rdx=Oop rdi=Oop [176]=Oop r8=Oop }
+                      ;*getfield parent {reexecute=1 rethrow=0 return_oop=0}
+                      ; - (reexecute) java.lang.ClassLoader::isAncestor@3 (line 2013)
+                      ; - java.lang.ClassLoader::needsClassLoaderPermissionCheck@15 (line 2035)
+                      ; - java.lang.ClassLoader::checkClassLoaderPermission@15 (line 2059)
+                      ; - java.lang.Class::getClassLoader@23 (line 901)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@9 (line 2436)
+                      ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f4726130: c3c5 ffe8 
+
+  0x00000251f4726134: ; ImmutableOopMap {[192]=Oop [208]=Oop rdi=Oop rdx=Oop [184]=Oop rsi=Oop }
+                      ;*invokevirtual lookupClassProtectionDomain {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@23 (line 2437)
+  0x00000251f4726134: e8c3 c5ff 
+
+  0x00000251f4726138: ;   {runtime_call throw_incompatible_class_change_error Runtime1 stub}
+  0x00000251f4726138: e8e3 eac5 
+
+  0x00000251f472613c: ; ImmutableOopMap {[192]=Oop [208]=Oop [184]=Oop [224]=Oop rsi=Oop rbx=Oop rax=Oop }
+                      ;*invokeinterface protectionDomain {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup::lookupClassProtectionDomain@17 (line 2457)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@23 (line 2437)
+                      ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f472613c: ffe8 dec3 
+
+  0x00000251f4726140: ; ImmutableOopMap {[192]=Oop [208]=Oop [184]=Oop [224]=Oop rsi=Oop rax=Oop }
+                      ;*invokeinterface protectionDomain {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup::lookupClassProtectionDomain@17 (line 2457)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@23 (line 2437)
+                      ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f4726140: c5ff e8d9 
+
+  0x00000251f4726144: ; ImmutableOopMap {[192]=Oop [208]=Oop [184]=Oop [224]=Oop rsi=Oop rax=Oop }
+                      ;*invokevirtual protectionDomain {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.System$2::protectionDomain@1 (line 2422)
+                      ; - java.lang.invoke.MethodHandles$Lookup::lookupClassProtectionDomain@17 (line 2457)
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@23 (line 2437)
+  0x00000251f4726144: c3c5 ff44 | 8b46 1849 | 83f8 000f | 84d6 feff | ff4c 8904 
+
+  0x00000251f4726158: ;   {runtime_call g1_pre_barrier_slow}
+  0x00000251f4726158: 24e8 a21d | c6ff e9c8 | feff ff48 | 83f8 000f | 84df feff | ff48 8934 
+
+  0x00000251f4726170: ;   {runtime_call g1_post_barrier_slow}
+  0x00000251f4726170: 24e8 8a20 | c6ff e9d1 
+
+  0x00000251f4726178: ;   {runtime_call throw_incompatible_class_change_error Runtime1 stub}
+  0x00000251f4726178: feff ffe8 
+
+  0x00000251f472617c: ; ImmutableOopMap {rbx=Oop rdi=Oop rsi=Oop [192]=Oop [208]=Oop r13=Oop rcx=Oop r14=Oop [184]=Oop }
+                      ;*invokeinterface defineClass {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@54 (line 2439)
+  0x00000251f472617c: a0ea c5ff 
+
+  0x00000251f4726180: ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00000251f4726180: e89b c3c5 
+
+  0x00000251f4726184: ; ImmutableOopMap {rbx=Oop rdi=Oop rsi=Oop [192]=Oop [208]=Oop r13=Oop rcx=Oop r14=Oop [184]=Oop }
+                      ;*invokeinterface defineClass {reexecute=0 rethrow=0 return_oop=0}
+                      ; - java.lang.invoke.MethodHandles$Lookup$ClassDefiner::defineClass@54 (line 2439)
+                      ;   {internal_word}
+  0x00000251f4726184: ff49 ba0c | 6172 f451 | 0200 004d | 8997 6803 
+
+  0x00000251f4726194: ;   {runtime_call SafepointBlob}
+  0x00000251f4726194: 0000 e965 | 18bc ff90 | 9049 8b87 | e003 0000 | 49c7 87e0 | 0300 0000 | 0000 0049 | c787 e803 
+  0x00000251f47261b4: 0000 0000 | 0000 4881 | c4f0 0000 
+
+  0x00000251f47261c0: ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00000251f47261c0: 005d e939 | b4c5 fff4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 | f4f4 f4f4 
+[Stub Code]
+  0x00000251f47261e0: ;   {no_reloc}
+  0x00000251f47261e0: 0f1f 4400 
+
+ : 
+ : 0048

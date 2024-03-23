@@ -1,0 +1,25 @@
+INDEX VERSION 1.134
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\877775718.index
+\app\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1744303065.index
+\demo\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2711159404.index
+\bfc-menu-app\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\211307288.index
+\SpringFormApp\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2015334059.index
+\Rclient\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1315473925.index
+\client\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2868430761.index
+\myFirstSpringboot1\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1303822157.index
+\stock-Calaculations-ui\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\693751752.index
+\actuator2\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3867632470.index
+\app-1\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2667451985.index
+\SpringFormApp\src\main\java
+C:\Users\DC\Documents\workspace-spring-tool-suite-4-4.21.0\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1544021599.index
+\actuator\src\main\java

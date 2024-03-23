@@ -1,0 +1,26 @@
+package com.example.caching;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.List;
+@Service
+public class CacheService {
+	@Autowired
+  private	CacheRepo cacheRepo;
+	
+	public Pupil save(Pupil pupil) {
+	Pupil p1=	cacheRepo.save(pupil);
+		return p1;
+	}
+	
+	public List<Pupil> load() {
+		 List<Pupil> p= cacheRepo.findAll();
+		 return   p;
+		
+	}
+	
+	public Pupil byId(int student_id) {
+		return cacheRepo.findById(student_id).get();
+	}
+
+}

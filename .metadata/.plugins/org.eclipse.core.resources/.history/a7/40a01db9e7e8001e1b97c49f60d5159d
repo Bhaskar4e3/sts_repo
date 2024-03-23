@@ -1,0 +1,27 @@
+package com.example.stock;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+@Controller
+public class ActuatorCont {
+	@GetMapping("/home")
+	public String call() {
+		System.out.println("user enterd into first home method");
+		return "home";
+	}
+	@GetMapping("/home2")
+	public String call2(@ModelAttribute String name,Model model) {
+		model.addAttribute("name", name);
+		System.out.println("user enterd into second home2 method");
+		return"home2";
+	
+	}
+	
+
+}

@@ -1,0 +1,27 @@
+package com.example.caching;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CacheCont {
+	@Autowired
+	CacheService cacheService;
+	@PostMapping("/add")
+	public Pupil save(@RequestBody Pupil pupil) {
+		
+		return  cacheService.save(pupil);
+		
+	}
+	@GetMapping("/load")
+	public List<Pupil> get() {
+		List<Pupil> pr=   cacheService.load();
+		return  pr;
+	}
+
+}

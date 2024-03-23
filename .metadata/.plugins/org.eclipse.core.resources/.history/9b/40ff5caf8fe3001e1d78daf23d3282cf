@@ -1,0 +1,7 @@
+package com.example.caching;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CacheRepo extends JpaRepository<T, ID> {
+
+}
